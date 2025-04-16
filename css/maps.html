@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Map</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Resume</a></li>
+      <li><a href="pets.html">Pets</a></li>
+      <li><a href="vacations.html">Vacations</a></li>
+      <li><a href="map.html">Map</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Places I Love</h1>
+    <h2>Here are 3 places I wanted to show you</h2>
+  </header>
+
+  <div id="map"></div>
+
+  <script>
+    function initMap() {
+      const centerLocation = { lat: 41.8781, lng: -87.6298 }; // Chicago
+
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 6,
+        center: centerLocation,
+      });
+
+      // Marker 1 - Senka
+      new google.maps.Marker({
+        position: { lat: 41.79134043010275, lng: -87.71154208937415 },
+        map,
+        title: "Senka",
+      });
+
+      // Marker 2 - Sears Tower
+      new google.maps.Marker({
+        position: { lat: 41.878913012422096, lng: -87.6359328603102 },
+        map,
+        title: "Sears Tower",
+      });
+
+      // Marker 3 - IIT
+      new google.maps.Marker({
+        position: { lat: 41.83160640396793, lng: -87.62722570264171 },
+        map,
+        title: "The Tower",
+      });
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp_F32R5fbtnXawgr6Tkhr-FolyckpMe8">
+  </script>
+</body>
+</html>
