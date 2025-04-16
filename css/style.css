@@ -1,0 +1,123 @@
+/* I wanted to redo my css as I was unhappy with my project 2 css style. */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #4b0082, #8a2be2); /* Purple gradient */
+  color: #ffffff;
+  padding: 0 20px 60px;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  margin-bottom: 40px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700; /* Gold highlight */
+}
+
+/* Header */
+header {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffccff;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #e6e6fa;
+  margin-bottom: 20px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 50px;
+}
+
+section h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #f0f0f0;
+}
+
+/* Pet Gallery */
+section#pet-gallery {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* Pet Cards */
+.pet {
+  background-color: rgba(255, 255, 255, 0.15);
+  margin-bottom: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pet img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+}
+
+.pet h3 {
+  font-size: 2rem;
+  color: #dda0dd; /* Light purple */
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.pet p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 1.8;
+  text-align: center;
+}
