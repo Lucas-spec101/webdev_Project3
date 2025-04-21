@@ -4,23 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Map</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
   <script src="script.js" defer></script>
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Resume</a></li>
-      <li><a href="pets.html">Pets</a></li>
-      <li><a href="vacations.html">Vacations</a></li>
-      <li><a href="maps.html">Map</a></li>
-    </ul>
-  </nav>
-  <header>
-    <h2>Here are 3 places I wanted to show you</h2>
-  </header>
-
-  <div id="map">
 
   <script>
     function initMap() {
@@ -54,8 +39,21 @@
     }
   </script>
   <script async defer
-   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp_F32R5fbtnXawgr6Tkhr-FolyckpMe8&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp_F32R5fbtnXawgr6Tkhr-FolyckpMe8&callback=initMap">
   </script>
-  </div>
+</head>
+<body>
+  <header>
+    <h2>Here are 3 places that hold some meaning to me</h2>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Resume</a></li>
+      <li><a href="pets.html">Pets</a></li>
+      <li><a href="vacations.html">Vacations</a></li>
+      <li><a href="map.html">Map</a></li>
+    </ul>
+  </nav>
+  <div id="map"></div>
 </body>
 </html>
