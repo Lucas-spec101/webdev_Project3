@@ -129,3 +129,78 @@ section#pet-gallery {
   margin: 40px auto;
   max-width: 900px;
 }
+
+/* Adding the mobile friendly part this will be applied to my pets.html page */
+
+/* Base styles (mobile-first) */
+body {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.pet {
+  padding: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.pet img {
+  width: 100%;
+  max-width: 250px;
+}
+
+nav ul {
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Media Query 1: Tablet - 600px and up */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .pet {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+  }
+
+  .pet img {
+    max-width: 200px;
+    flex-shrink: 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+/* Media Query 2: Desktop - 900px and up */
+@media (min-width: 900px) {
+  body {
+    font-size: 20px;
+    padding: 40px;
+  }
+
+  .pet {
+    max-width: 800px;
+    margin: 0 auto 50px;
+  }
+
+  .pet img {
+    max-width: 300px;
+  }
+
+  section#pet-gallery {
+    padding: 50px;
+  }
+
+  nav ul {
+    gap: 50px;
+  }
+}
